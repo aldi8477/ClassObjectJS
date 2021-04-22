@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>JS INDEX</title>
+    </head>
+    <body> 
+            <form onsubmit="return false">         
+               <table>
+                    <tr>
+                        <td>Laptop1</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="Laptop1" placeholder ="tipe">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laptop2</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="Laptop2" placeholder ="spesifikasi">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laptop3</td>
+                        <td>:</td>
+                        <td>
+                            <input type="text" id="Laptop3" placeholder ="software">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td colspan="3">
+                            <button onclick="sles()">
+                                Klik
+                            </button>
+                        </td>
+                    </tr>
+               </table>
+            </form>
+      
+        <script>
+            function sles() {
+                let a = document.getElementById("Laptop1").value;
+                let b = document.getElementById("Laptop2").value;
+                let c = document.getElementById("Laptop3").value;
+
+
+                class laptop {
+                
+                layar;
+                warna;
+                tipe;
+                ram;
+                software;
+        
+                constructor(layar, warna, tipe, ram, software) {
+                    this.layar = "14 inch";
+                    this.warna = "biru";
+                    this.tipe = "notebook";
+                    this.ram = "1 gb";
+                    this.software = "windows 7";
+                    this.tipe = a;
+                    this.ram = b;
+                    this.software = caches; 
+
+                }
+        
+                dinyalakan(tipe) {
+                    return( "laptop " + tipe + " ini dinyalakan");
+                }
+                digunakan(ram){
+                    return("laptop " + ram + " ini digunakan");
+                }
+                dimatikan(software){
+                    return("laptop" + software + "ini dimatikan");
+                }
+
+                
+            }
+        
+            let Laptop1= new laptop;
+            let Laptop2 = new laptop;
+            let Laptop3 = new laptop;
+
+            console.log(Laptop1.dinyalakan(a));
+            console.log(Laptop1.layar);
+            console.log(Laptop1.warna);
+            console.log(Laptop2.digunakan(b));
+            console.log(Laptop2.tipe);
+            console.log(Laptop2.ram);
+            console.log(Laptop3.digunakan(c));
+            console.log(Laptop3.layar);
+            console.log(Laptop3.warna);
+            
+        
+        }
+        </script>
+    </body>
+</html>
